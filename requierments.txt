@@ -1,0 +1,8 @@
+picamera2
+cv2
+numpy
+tflite
+time
+os
+telegram
+collections
