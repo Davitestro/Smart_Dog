@@ -4,9 +4,12 @@ import time
 import subprocess
 from datetime import datetime
 
+with open("api.env", 'r') as file:
+    api = file.readlines()[0].strip()
+    session = file.readlines()[1].strip()
 # Конфигурация Telegram бота
-TELEGRAM_BOT_TOKEN = '8116589780:AAElFz7SkgV5Kh-m3iiex20ViR3RmTnLO4k'
-TELEGRAM_CHAT_ID = '5354971345'
+TELEGRAM_BOT_TOKEN = api
+TELEGRAM_CHAT_ID = session
 TELEGRAM_API_URL = f'https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage'
 
 # Глобальные переменные для отслеживания состояния

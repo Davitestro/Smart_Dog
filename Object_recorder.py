@@ -10,8 +10,14 @@ from collections import deque
 
 
 # === Connect to telegram bot ===
-telegram_api = "8116589780:AAElFz7SkgV5Kh-m3iiex20ViR3RmTnLO4k"
-session = "5354971345"
+
+with open("api.env", 'r') as file:
+    api = file.readlines()[0].strip()
+    ses = file.readlines()[1].strip()
+
+
+telegram_api = api
+session = ses
 
 bot = Bot(token=telegram_api)
 
