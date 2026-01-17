@@ -1,17 +1,23 @@
 # Raspberry Pi Home Automation Project
 
-This project is designed to help you automate and control devices in your home using a Raspberry Pi. It includes scripts and tools for managing sensors, relays, and other smart home components.
+This project has desinged for geting secured home via. raspberry pi 4b and upper versions.
+
+## Work principe
+
+Via head changed YoLO raspberry pi may classify if there is a people or not. 
+If there is someone it starts to recording the video.
+Whene camera stop to see somenone it sends a video on the chat that you want!
 
 ## Features
 
 - Control home appliances via GPIO
-- Monitor sensors (temperature, humidity, etc.)
-- Web interface for remote control (if applicable)
+- Monitor sensors (temperature, humidity, camera)
+- Web interface for remote control (Not ended)
 - Easy to extend and customize
 
 ## Requirements
 
-- Raspberry Pi (any model with GPIO support)
+- Raspberry Pi (4b and upper)
 - Raspbian OS or compatible Linux distribution
 - Python 3.x
 - Required Python libraries (see below)
@@ -21,7 +27,7 @@ This project is designed to help you automate and control devices in your home u
 1. **Clone the repository:**
 
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/Davitestro/Raspbery-homealarm
    cd "Rasbpery_pi Home"
    ```
 2. **Install dependencies:**
